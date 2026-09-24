@@ -1,0 +1,11 @@
+{
+  "name": "answority-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Answority website and interactive dashboard demo",
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "node serve.cjs"
+  },
+  "engines": { "node": ">=20" }
+}
