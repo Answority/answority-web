@@ -1,0 +1,27 @@
+.book-section {
+  display: grid;
+  grid-template-columns: minmax(180px, 310px) minmax(0, 1fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: center;
+  border-top: 1px solid #d6dfd5;
+}
+.book-section h2 { margin-bottom: 1rem; }
+.book-byline { color: #4d5a53; }
+.book-cover { display: block; width: 100%; height: auto; border-radius: 5px; box-shadow: 0 18px 40px #17231e2b; }
+.book-copy { max-width: 34rem; color: #2b3a32; line-height: 1.8; }
+.book-copy .text-button { display: inline-block; margin-top: 1rem; }
+/* Legible text colours on the light marketing panels and dark header. */
+.header { background: #143a29; }
+.eyebrow { color: #3d634d; }
+.hero .eyebrow { color: #c5d5c5; }
+.engine-strip > p, .engine-strip > small { color: #4e6255; }
+.card-number { color: #4e674c; }
+.steps button > span, .steps button > div > small { color: #486445; }
+.product-intro .eyebrow, .product-intro p { color: #405a39; }
+.buyer-label, .buyer-questions article > span { color: #466440; }
+.pillars article > p { color: #53665a; }
+@media (max-width: 740px) {
+  .book-section { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .book-cover { width: min(240px, 75%); }
+  .closing-symbol { display: none; }
+}
