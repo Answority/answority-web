@@ -4,3 +4,6 @@
 
 /* Match the new prototype branding on the results preview. */
 .results-header .brand{color:#17231e}.results-header .brand-mark{background:#d7fb74;color:#17231e;border-radius:50%;padding-bottom:2px}.results-header .brand-dot{color:#257d5c}.results-primary{background:#257d5c;color:#fff}.results-primary:hover{background:#1f6b4f}.results-primary:focus-visible{outline:3px solid #1a5a43;outline-offset:4px}
+
+/* Show the results content without the prototype navigation or header. */
+.snapshot{padding:0;background:transparent;border:0}.snapshot-image{position:relative;aspect-ratio:1208 / 1501;overflow:hidden}.snapshot-image img{position:absolute;max-width:none;width:119.2053%;height:auto;left:-19.2053%;top:-6.2625%}
