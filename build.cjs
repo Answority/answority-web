@@ -7,7 +7,7 @@ if (fs.existsSync(output) && fs.readdirSync(output).length) {
   throw new Error('Build destination must be empty; choose a fresh ANSWORITY_BUILD_DIR.');
 }
 fs.mkdirSync(output, { recursive: true });
-for (const entry of ['index.html', 'results.html', 'results.css', 'styles.css', 'redesign.css', 'book.css', 'app.js', 'favicon.svg', 'assets']) {
+for (const entry of ['index.html', 'results.html', 'results.css', 'styles.css', 'redesign.css', 'book.css', 'app.js', 'favicon.svg', 'prototype-favicon.svg', 'assets']) {
   fs.cpSync(path.join(__dirname, entry), path.join(output, entry), { recursive: true, filter: source => path.basename(source) !== 'dashboard.png' });
 }
 console.log(`Answority website candidate written to ${output}`);
